@@ -40,15 +40,15 @@ public class Animal {
     public String getEspecie(){
             return especie;
         }
-    public void setIdade(int id){
+    public void setIdade(int idade){
             if(idade>=0){
                 this.idade = idade;
             }else {
-                System.out.println("Digite uma idade valida")
+                System.out.println("Digite uma idade valida");
             }
-
-    public int getId(){
-            return id;
+    	}
+    public int getIdade(){
+            return idade;
         }
     public void setVacinado(boolean vacinado){
             this.vacinado = vacinado;
@@ -56,5 +56,8 @@ public class Animal {
     public boolean getVacinado(){
             return vacinado;
         }
+    public void mostrarAnimal() {
+    	System.out.printf("| nome: %s | especie: %s | idade: %d | vacinado: %b\n", nome, especie, idade, vacinado);
+    }
 
 }
